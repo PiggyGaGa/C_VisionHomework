@@ -26,10 +26,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:/Program Files (x86)/Windows Kits/8.1/Include/um",
-                "C:/Program Files (x86)/Windows Kits/8.1/Include/shared",
-                "C:/Users/liana/Documents/OpenCV_linux/install/include",
-                "C:/Users/liana/Documents/OpenCV_linux/install/include/opencv2",
+                "C:/Users/liana/Documents/OpenCVMinGW/install/include",
                 "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include",
                 "${workspaceRoot}",
                 "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/c++",
@@ -42,10 +39,8 @@
             "intelliSenseMode": "msvc-x64",
             "browse": {
                 "path": [
-                    "C:/Program Files (x86)/Windows Kits/8.1/Include/um",
-                    "C:/Program Files (x86)/Windows Kits/8.1/Include/shared",
-                    "C:/Users/liana/Documents/OpenCV_linux/install/include",
-                    "C:/Users/liana/Documents/OpenCV_linux/install/include/opencv2",
+                    "C:/Users/liana/Documents/OpenCVMinGW/install/include", 
+                    "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/include",
                     "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include",
                     "${workspaceRoot}"
                 ],

@@ -1,12 +1,16 @@
-#include "MagicCube.hpp"
 #include <opencv2/videoio.hpp>
-#include <opencv2/Imageproc.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/core.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgcodecs.hpp>
-
+#include "MagicCube.hpp"
+#include <cstdio>
+#include <cstdlib>
 
 #define FRAMENUMBER 5
 volatile unsigned int flag_process = 0;
+cv::Size ImageSize(720, 480);
+
 Cube::Cube()
 {
     this->showImag = cv::Mat::zeros(ImageSize, CV_8UC3);
@@ -18,11 +22,20 @@ void Cube::ImageProducer()
     if (flag_process % 2 == 1)
     {
         cv::VideoCapture video0(0);
+        if (!video0.isOpened())
+        {
+            std::cout << "Can not open video device " << std::endl;
+            
+            std::cout << "Please press any key to contine" << std::endl;
+            std::getchar();
+            std::exit(0);
+        }
         cv::Mat frame;
         int count = 0;
         while(1)
         {
-            video >> frame;
+            video0.read(frame);
+            //video0 >> frame;
             if (count % FRAMENUMBER == 0)
             {
                 //将图像的大小改成需要的大小
@@ -57,7 +70,7 @@ void Cube::ImageDetect()
     }
 }
 
-cv::Mat DetectCubeColor(const cv::Mat &src)
+cv::Mat Cube::DetectCubeColor(const cv::Mat &src)
 {
     cv::Mat result;
     cv::Mat grayImage, cubeEdge, binImage;
@@ -68,14 +81,9 @@ cv::Mat DetectCubeColor(const cv::Mat &src)
 
     //寻找边缘
     int edgeThread = 1;
+
     cv::Canny(grayImage, cubeEdge, edgeThread, edgeThread * 3, 3);
 
     //膨胀腐蚀操作
-
-
-
-
-
-
-
+    
 }

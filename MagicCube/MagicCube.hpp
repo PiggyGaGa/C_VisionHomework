@@ -1,4 +1,6 @@
-#ifdef CUBE_H
+#ifndef CUBE_H
+#define CUBE_H
+
 
 #include <opencv2/core.hpp>
 #include <opencv2/videoio.hpp>
