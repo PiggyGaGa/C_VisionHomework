@@ -5,6 +5,7 @@
             "includePath": [
                 "/usr/include",
                 "/usr/local/include",
+                "/usr/local/OpenCV/include",
                 "${workspaceRoot}"
             ],
             "defines": [],
@@ -13,6 +14,7 @@
                 "path": [
                     "/usr/include",
                     "/usr/local/include",
+                    "/usr/local/OpenCV/include",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
@@ -24,16 +26,39 @@
             ]
         },
         {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include/x86_64-linux-gnu/c++/5.4.0",
+                "/usr/include/c++/5.4.0",
+                "/usr/local/include",
+                "/usr/lib/clang/3.8.0/include",
+                "/usr/include/x86_64-linux-gnu",
+                "/usr/include",
+                "/usr/local/OpenCV/include",
+                "${workspaceRoot}"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include/x86_64-linux-gnu/c++/5.4.0",
+                    "/usr/include/c++/5.4.0",
+                    "/usr/local/include",
+                    "/usr/lib/clang/3.8.0/include",
+                    "/usr/include/x86_64-linux-gnu",
+                    "/usr/include",
+                    "/usr/local/OpenCV/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
             "name": "Win32",
             "includePath": [
-                "C:/Program Files (x86)/Windows Kits/8.1/Include/um",
-                "C:/Program Files (x86)/Windows Kits/8.1/Include/shared",
-                "C:/Users/liana/Documents/OpenCV_linux/install/include",
-                "C:/Users/liana/Documents/OpenCV_linux/install/include/opencv2",
-                "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include",
-                "${workspaceRoot}",
-                "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/c++",
-                "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"
+                "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
+                "${workspaceRoot}"
             ],
             "defines": [
                 "_DEBUG",
@@ -42,11 +67,7 @@
             "intelliSenseMode": "msvc-x64",
             "browse": {
                 "path": [
-                    "C:/Program Files (x86)/Windows Kits/8.1/Include/um",
-                    "C:/Program Files (x86)/Windows Kits/8.1/Include/shared",
-                    "C:/Users/liana/Documents/OpenCV_linux/install/include",
-                    "C:/Users/liana/Documents/OpenCV_linux/install/include/opencv2",
-                    "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include",
+                    "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,

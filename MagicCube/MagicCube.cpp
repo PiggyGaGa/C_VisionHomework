@@ -1,12 +1,12 @@
-#include "MagicCube.hpp"
+
 #include <opencv2/videoio.hpp>
-#include <opencv2/Imageproc.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgcodecs.hpp>
-
+#include <opencv2/imgproc.hpp>
+#include "MagicCube.hpp"
 
 #define FRAMENUMBER 5
-volatile unsigned int flag_process = 0;
+
 Cube::Cube()
 {
     this->showImag = cv::Mat::zeros(ImageSize, CV_8UC3);
@@ -15,30 +15,30 @@ Cube::Cube()
 
 void Cube::ImageProducer()
 {
-    if (flag_process % 2 == 1)
+    cv::VideoCapture video0(0);
+    cv::Mat frame;
+    int count = 0;
+    while(1)
     {
-        cv::VideoCapture video0(0);
-        cv::Mat frame;
-        int count = 0;
-        while(1)
+        video >> frame;
+        if (count % FRAMENUMBER == 0)
         {
-            video >> frame;
-            if (count % FRAMENUMBER == 0)
+            //将图像的大小改成需要的大小
+            if (frame.size != ImageSize)
             {
-                //将图像的大小改成需要的大小
-                if (frame.size != ImageSize)
-                {
-                    frame.resize(ImageSize);
-                } 
+                frame.resize(ImageSize);
+            } 
+            if (flag_process % 2 == 1)
+            {
                 this->srcImag = frame;
                 this->showImage = DetectCubeColor(frame);
+                flag_process++;
             }
-            count++;
+            
         }
-        video0.release();
-        flag_process++;
+        count++;
     }
-    
+    video0.release();
 }
 
 void Cube::ImageDetect()
@@ -57,7 +57,7 @@ void Cube::ImageDetect()
     }
 }
 
-cv::Mat DetectCubeColor(const cv::Mat &src)
+cv::Mat Cube::DetectCubeColor(const cv::Mat &src)
 {
     cv::Mat result;
     cv::Mat grayImage, cubeEdge, binImage;
@@ -75,7 +75,5 @@ cv::Mat DetectCubeColor(const cv::Mat &src)
 
 
 
-
-
-
+    return result;
 }

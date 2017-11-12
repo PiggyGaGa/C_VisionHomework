@@ -1,10 +1,7 @@
 #ifdef CUBE_H
-
 #include <opencv2/core.hpp>
-#include <opencv2/videoio.hpp>
-#include <thread>
-cv::Size ImagSize(720, 480);
-
+volatile unsigned int flag_process = 0;
+cv::Size ImageSize(720, 480);
 class Cube
 {
 public:
@@ -14,8 +11,6 @@ public:
     cv::Mat DetectCubeColor(const cv::Mat &src);
     void ImageProducer();
     void ImageShow();
-    
-
 private:
     cv::Mat srcImag;
     cv::Mat showImag;
