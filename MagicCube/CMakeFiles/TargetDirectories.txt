@@ -1,0 +1,3 @@
+/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/rebuild_cache.dir
+/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/edit_cache.dir
+/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/cube.dir
