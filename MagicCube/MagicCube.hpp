@@ -1,5 +1,9 @@
 #ifndef CUBE_H
 #define CUBE_H
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 
 #include <opencv2/core.hpp>
 #include <opencv2/videoio.hpp>

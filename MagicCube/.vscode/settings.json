@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "files.associations": {
         "iostream": "cpp",
@@ -37,3 +38,11 @@
         "-std=c++11"
     ]
 }
+=======
+{
+    "files.associations": {
+        "thread": "cpp"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled"
+}
+>>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984

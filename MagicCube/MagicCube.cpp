@@ -4,17 +4,27 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgcodecs.hpp>
 #include "MagicCube.hpp"
+<<<<<<< HEAD
 #include <iostream>
 #include <cstdlib>
 
 //#define DEBUG
 //#define DEBUGSHOW
+=======
+#include <cstdio>
+#include <cstdlib>
+
+>>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 #define FRAMENUMBER 5
 
 using std::cout; using std::vector;
 
 volatile unsigned int flag_process = 0;
 cv::Size ImageSize(720, 480);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 Cube::Cube()
 {
     this->showImage = cv::Mat(ImageSize, CV_8UC3, cv::Scalar(0, 0, 0));
@@ -26,6 +36,7 @@ void Cube::ImageProducer()
     video0.open("/dev/video0");
     if (!video0.isOpened())
     {
+<<<<<<< HEAD
         cout << "Can not open video device " << std::endl;
         
         cout << "Please press any key to contine" << std::endl;
@@ -41,6 +52,23 @@ void Cube::ImageProducer()
             video0.read(frame);
             //video0 >> frame;
 
+=======
+        cv::VideoCapture video0(0);
+        if (!video0.isOpened())
+        {
+            std::cout << "Can not open video device " << std::endl;
+            
+            std::cout << "Please press any key to contine" << std::endl;
+            std::getchar();
+            std::exit(0);
+        }
+        cv::Mat frame;
+        int count = 0;
+        while(1)
+        {
+            video0.read(frame);
+            //video0 >> frame;
+>>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
             if (count % FRAMENUMBER == 0)
             {
                 //将图像的大小改成需要的大小
@@ -77,7 +105,11 @@ void Cube::ImageShow()
     }
 }
 
+<<<<<<< HEAD
 void Cube::DetectCubeColor(const cv::Mat &src)
+=======
+cv::Mat Cube::DetectCubeColor(const cv::Mat &src)
+>>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 {
     cv::Mat result;
     cv::Mat grayImage, cubeEdge;
@@ -91,7 +123,11 @@ void Cube::DetectCubeColor(const cv::Mat &src)
     cv::blur(grayImage, grayImage, cv::Size(3, 3));
 
     //寻找边缘
+<<<<<<< HEAD
     int edgeThread = 20;
+=======
+    int edgeThread = 1;
+>>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 
     cv::Canny(grayImage, cubeEdge, edgeThread, edgeThread * 3, 3);
     int element_shapec = cv::MORPH_RECT;
@@ -117,6 +153,7 @@ void Cube::DetectCubeColor(const cv::Mat &src)
 #endif
 
     //膨胀腐蚀操作
+<<<<<<< HEAD
     cv::Mat erodeDst, dilateDst;
     int element_shape = cv::MORPH_RECT;
     int an = 7;
@@ -332,4 +369,7 @@ void Cube::drawCubeFace(vector<cv::Rect> rectROI, vector<cv::Scalar> BGRColor, c
         cv::Mat mask = cv::Mat(rectROI[i].size(), CV_8UC3, BGRColor[i]);
         result.copyTo(roi, mask);
     }
+=======
+    
+>>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 }
