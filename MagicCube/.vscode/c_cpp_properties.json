@@ -57,16 +57,8 @@
         {
             "name": "Win32",
             "includePath": [
-<<<<<<< HEAD
                 "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
                 "${workspaceRoot}"
-=======
-                "C:/Users/liana/Documents/OpenCVMinGW/install/include",
-                "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include",
-                "${workspaceRoot}",
-                "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/c++",
-                "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"
->>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
             ],
             "defines": [
                 "_DEBUG",
@@ -75,13 +67,6 @@
             "intelliSenseMode": "msvc-x64",
             "browse": {
                 "path": [
-<<<<<<< HEAD
-                    "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/*",
-=======
-                    "C:/Users/liana/Documents/OpenCVMinGW/install/include", 
-                    "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/include",
-                    "C:/Program Files/mingw-w64/x86_64-4.9.2-posix-seh-rt_v3-rev1/mingw64/x86_64-w64-mingw32/include",
->>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,

@@ -15,28 +15,28 @@ The CXX compiler identification is GNU, found in "/home/liana/Desktop/C_VisionHo
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d4756/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d4756.dir/build.make CMakeFiles/cmTC_d4756.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_cfc6b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cfc6b.dir/build.make CMakeFiles/cmTC_cfc6b.dir/build
 make[1]: Entering directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d4756.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_d4756.dir/testCXXCompiler.cxx.o -c /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_d4756
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4756.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_d4756.dir/testCXXCompiler.cxx.o  -o cmTC_d4756 
+Building CXX object CMakeFiles/cmTC_cfc6b.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_cfc6b.dir/testCXXCompiler.cxx.o -c /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_cfc6b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfc6b.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_cfc6b.dir/testCXXCompiler.cxx.o  -o cmTC_cfc6b 
 make[1]: Leaving directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9609c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9609c.dir/build.make CMakeFiles/cmTC_9609c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d1092/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d1092.dir/build.make CMakeFiles/cmTC_d1092.dir/build
 make[1]: Entering directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9609c.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_9609c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_9609c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9609c.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_9609c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9609c  
+Building CXX object CMakeFiles/cmTC_d1092.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_d1092.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_d1092
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1092.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_d1092.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d1092  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -46,8 +46,8 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9609c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZ9cAXo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9609c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9609c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d1092' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjQmIcC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d1092 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d1092.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
 
 
@@ -55,14 +55,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9609c/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9609c.dir/build.make CMakeFiles/cmTC_9609c.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d1092/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d1092.dir/build.make CMakeFiles/cmTC_d1092.dir/build]
   ignore line: [make[1]: Entering directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_9609c.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_9609c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_9609c]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9609c.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_9609c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9609c  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_d1092.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_d1092.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_d1092]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1092.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_d1092.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d1092  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -72,13 +72,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9609c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZ9cAXo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_9609c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_9609c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d1092' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjQmIcC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d1092 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d1092.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccZ9cAXo.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccjQmIcC.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -95,7 +95,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9609c] ==> ignore
+    arg [cmTC_d1092] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -107,7 +107,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_9609c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_d1092.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -139,14 +139,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8bc27/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8bc27.dir/build.make CMakeFiles/cmTC_8bc27.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6a422/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6a422.dir/build.make CMakeFiles/cmTC_6a422.dir/build
 make[1]: Entering directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8bc27.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_8bc27.dir/feature_tests.cxx.o -c /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8bc27
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bc27.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_8bc27.dir/feature_tests.cxx.o  -o cmTC_8bc27 
+Building CXX object CMakeFiles/cmTC_6a422.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_6a422.dir/feature_tests.cxx.o -c /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6a422
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a422.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_6a422.dir/feature_tests.cxx.o  -o cmTC_6a422 
 make[1]: Leaving directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
 
 
@@ -212,14 +212,14 @@ make[1]: Leaving directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMake
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6d674/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6d674.dir/build.make CMakeFiles/cmTC_6d674.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7db1d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7db1d.dir/build.make CMakeFiles/cmTC_7db1d.dir/build
 make[1]: Entering directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6d674.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_6d674.dir/feature_tests.cxx.o -c /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_6d674
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d674.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_6d674.dir/feature_tests.cxx.o  -o cmTC_6d674 
+Building CXX object CMakeFiles/cmTC_7db1d.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_7db1d.dir/feature_tests.cxx.o -c /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7db1d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7db1d.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_7db1d.dir/feature_tests.cxx.o  -o cmTC_7db1d 
 make[1]: Leaving directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
 
 
@@ -285,14 +285,14 @@ make[1]: Leaving directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMake
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3357e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3357e.dir/build.make CMakeFiles/cmTC_3357e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_bbae1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bbae1.dir/build.make CMakeFiles/cmTC_bbae1.dir/build
 make[1]: Entering directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3357e.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_3357e.dir/feature_tests.cxx.o -c /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_3357e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3357e.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_3357e.dir/feature_tests.cxx.o  -o cmTC_3357e 
+Building CXX object CMakeFiles/cmTC_bbae1.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_bbae1.dir/feature_tests.cxx.o -c /home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bbae1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbae1.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_bbae1.dir/feature_tests.cxx.o  -o cmTC_bbae1 
 make[1]: Leaving directory '/home/liana/Desktop/C_VisionHomework/MagicCube/CMakeFiles/CMakeTmp'
 
 

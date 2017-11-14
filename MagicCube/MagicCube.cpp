@@ -4,27 +4,17 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgcodecs.hpp>
 #include "MagicCube.hpp"
-<<<<<<< HEAD
 #include <iostream>
 #include <cstdlib>
 
 //#define DEBUG
 //#define DEBUGSHOW
-=======
-#include <cstdio>
-#include <cstdlib>
-
->>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 #define FRAMENUMBER 5
-
+#define VIDEODEVICE "/dev/video0"
 using std::cout; using std::vector;
 
 volatile unsigned int flag_process = 0;
 cv::Size ImageSize(720, 480);
-<<<<<<< HEAD
-=======
-
->>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 Cube::Cube()
 {
     this->showImage = cv::Mat(ImageSize, CV_8UC3, cv::Scalar(0, 0, 0));
@@ -33,10 +23,9 @@ Cube::Cube()
 void Cube::ImageProducer()
 {
     cv::VideoCapture video0;//("./cube2.mp4");
-    video0.open("/dev/video0");
+    video0.open(VIDEODEVICE);
     if (!video0.isOpened())
     {
-<<<<<<< HEAD
         cout << "Can not open video device " << std::endl;
         
         cout << "Please press any key to contine" << std::endl;
@@ -52,23 +41,6 @@ void Cube::ImageProducer()
             video0.read(frame);
             //video0 >> frame;
 
-=======
-        cv::VideoCapture video0(0);
-        if (!video0.isOpened())
-        {
-            std::cout << "Can not open video device " << std::endl;
-            
-            std::cout << "Please press any key to contine" << std::endl;
-            std::getchar();
-            std::exit(0);
-        }
-        cv::Mat frame;
-        int count = 0;
-        while(1)
-        {
-            video0.read(frame);
-            //video0 >> frame;
->>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
             if (count % FRAMENUMBER == 0)
             {
                 //将图像的大小改成需要的大小
@@ -105,11 +77,7 @@ void Cube::ImageShow()
     }
 }
 
-<<<<<<< HEAD
 void Cube::DetectCubeColor(const cv::Mat &src)
-=======
-cv::Mat Cube::DetectCubeColor(const cv::Mat &src)
->>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 {
     cv::Mat result;
     cv::Mat grayImage, cubeEdge;
@@ -123,11 +91,7 @@ cv::Mat Cube::DetectCubeColor(const cv::Mat &src)
     cv::blur(grayImage, grayImage, cv::Size(3, 3));
 
     //寻找边缘
-<<<<<<< HEAD
     int edgeThread = 20;
-=======
-    int edgeThread = 1;
->>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
 
     cv::Canny(grayImage, cubeEdge, edgeThread, edgeThread * 3, 3);
     int element_shapec = cv::MORPH_RECT;
@@ -144,7 +108,7 @@ cv::Mat Cube::DetectCubeColor(const cv::Mat &src)
     //霍夫变换
     vector<cv::Vec4i> lines;
     cv::Mat cubeLine = cv::Mat::zeros(ImageSize, CV_8UC1);
-    HoughLinesP(cubeEdge, lines, 1, CV_PI / 180, 80, 50, 10);
+    cv::HoughLinesP(cubeEdge, lines, 1, CV_PI / 180, 80, 50, 10);
     drawDetectLines(cubeLine, lines, cv::Scalar(255));
 
 #ifdef DEBUG
@@ -153,7 +117,6 @@ cv::Mat Cube::DetectCubeColor(const cv::Mat &src)
 #endif
 
     //膨胀腐蚀操作
-<<<<<<< HEAD
     cv::Mat erodeDst, dilateDst;
     int element_shape = cv::MORPH_RECT;
     int an = 7;
@@ -356,20 +319,39 @@ void Cube::findRectROI(int rank, cv::Size faceSize, vector<cv::Rect> &rectROI)
 }
 void Cube::detectROIColor(int rank, const cv::Mat &cubeFace, vector<cv::Rect> rectROI, vector<cv::Scalar> &BGRColor)
 {
-    for (int i = 0;  i < rectROI.size(); i++)
+    for (int i = 0;  i < int(rectROI.size()); i++)
     {
-        cv::Mat roi = cubeFace(rectROI[i]);
+        //every color block get the center small part
+        cv::Rect colorRect;
+        colorRect.x = rectROI[i].x + int(0.25 * rectROI[i].width);
+        colorRect.y = rectROI[i].y + int(0.25 * rectROI[i].height);
+        colorRect.width = rectROI[i].width / 4;
+        colorRect.height = rectROI[i].height / 4;
+        
+        cv::Mat roi = cubeFace(colorRect);
+        cv::Mat hsv;
+        cv::cvtColor(roi, hsv, cv::COLOR_BGR2HSV);
+        BGRColor[i] = cv::mean(roi);
+
     }
 }
 void Cube::drawCubeFace(vector<cv::Rect> rectROI, vector<cv::Scalar> BGRColor, cv::Mat &result)
 {
-    for (int i = 0; i < rectROI.size(); i++)
+    for (int i = 0; i < int(rectROI.size()); i++)
     {
-        cv::Mat roi = result(rectROI[i]);
-        cv::Mat mask = cv::Mat(rectROI[i].size(), CV_8UC3, BGRColor[i]);
-        result.copyTo(roi, mask);
+        cv::Mat roiImage = result(rectROI[i]);
+        cv::Mat pic = cv::Mat(rectROI[i].size(), CV_8UC3, BGRColor[i]);    
+        cv::Mat mask = cv::Mat(rectROI[i].size(), CV_8UC1, cv::Scalar(255));
+        pic.copyTo(roiImage, mask);
     }
-=======
-    
->>>>>>> 0a6cbbdb6b796a41fa0c54c18a42a268d63c1984
+    int rank = std::sqrt(rectROI.size());
+    for (int i = 1; i < rank; i++)
+    {
+        cv::Point p1(rectROI[rank * i].x, rectROI[rank * i].y);
+        cv::Point p2(rectROI[rank * i].x + rectROI[i].width * rank, rectROI[rank * i].y);
+        cv::Point p3(rectROI[i].x, rectROI[i].y);
+        cv::Point p4(rectROI[i].x, rectROI[i].y + rectROI[i].height * rank);
+        cv::line(result, p1, p2, cv::Scalar(255, 255, 255), 2);
+        cv::line(result, p3, p4, cv::Scalar(255, 255, 255), 2);
+    }
 }
